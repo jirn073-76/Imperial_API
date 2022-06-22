@@ -12,4 +12,9 @@ public class ImperialApiController {
     public double gramsToOunce(@RequestParam double amount){
         return conv.gramsToOunce(amount);
     }
+
+    @RequestMapping("/ouncesToGram")
+    public double ounceToGram(@RequestParam double amount){
+        return conv.ounceToGram(amount);
+    }
 }
